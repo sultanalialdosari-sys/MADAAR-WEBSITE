@@ -17,5 +17,4 @@ This is a static website and can be deployed to GitHub Pages, Cloudflare Pages, 
 - Core palette: Obsidian Black `#0B0D12`, Titanium Silver `#C0C6D4`, restrained blue accents.
 - The current MADAAR wordmark is a temporary typographic placeholder. Replace it with the approved original logo asset when supplied; do not redraw or alter the master logo.
 - Product stage labels are intentionally conservative and should be updated only when their status is confirmed.
-- Contact email is currently a placeholder: `hello@madaar.ai`. Confirm ownership and routing before public launch.
 - No analytics, tracking, backend, or data collection is included.
