@@ -1,27 +1,34 @@
 # MADAAR — Corporate Website
 
-A responsive bilingual (English / Arabic) corporate landing page for MADAAR and its product ecosystem.
+A responsive bilingual (English / Arabic) corporate website for MADAAR and its three-product ecosystem.
 
-## Current structure
-- `index.html` — semantic page structure and content
-- `styles.css` — responsive dark visual system
-- `script.js` — language toggle and mobile navigation
+## Site structure
+- `index.html` — MADAAR corporate homepage
+- `business/index.html` — MADAAR BUSINESS product page
+- `health/index.html` — MADAAR HEALTH product concept
+- `intel/index.html` — MADAAR INTEL product concept
+- `assets/madaar-symbol.svg` and `assets/madaar-wordmark.svg` — approved Variant A flat logo assets
+- `social-preview.svg` — 1200×630 social sharing artwork using the approved logo
 
-## Run locally
-Open `index.html` in a browser, or serve the folder with any static HTTP server.
+## Brand system
+- Obsidian Black: `#0B0D12`
+- Titanium Silver: `#C6CBD2`
+- Graphite: `#1B2028`
+- Mist White: `#E7EAEE`
+- Midnight Blue: `#16263B`
+- Latin type: Sora; Arabic type: IBM Plex Sans Arabic
+
+The website uses the approved MADAAR logo assets. Do not redraw or alter the master logo.
+
+## Product status
+- BUSINESS — IN DEVELOPMENT
+- HEALTH — CONCEPT STAGE
+- INTEL — CONCEPT STAGE
+
+These labels are intentionally conservative and should only change when the corresponding product status is confirmed.
 
 ## Deployment
-This is a static website and can be deployed to GitHub Pages, Cloudflare Pages, or Vercel.
+The site is a static website deployed to GitHub Pages by the workflow in `.github/workflows/deploy-pages.yml`.
 
-## Brand implementation notes
-- Core palette: Obsidian Black `#0B0D12`, Titanium Silver `#C6CBD2`, Graphite `#1B2028`, Mist White `#E7EAEE`, and Midnight Blue `#16263B`.
-- The current MADAAR wordmark is a temporary typographic placeholder. Replace it with the approved original logo asset when supplied; do not redraw or alter the master logo.
-- Product stage labels are intentionally conservative and should be updated only when their status is confirmed.
-- No analytics, tracking, backend, or data collection is included.
-
-
-## Launch readiness notes
-- The exact approved original logo master is not currently in this repository. The current M monogram and favicon are temporary and must be replaced with the approved source files before final brand sign-off.
-- Social preview currently uses SVG. Add and configure a PNG 1200×630 export after the approved logo is restored, for broader social crawler compatibility.
-- Official contact and legal entity details are intentionally omitted until verified; no contact address or legal terms have been invented.
-- Product stages remain: BUSINESS — IN DEVELOPMENT; HEALTH and INTEL — CONCEPT STAGE.
+## Privacy and official information
+No analytics, tracking, backend, or data collection is included in this static site. Official contact channels and legal entity details are intentionally not published until verified.
