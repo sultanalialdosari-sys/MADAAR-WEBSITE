@@ -31,7 +31,7 @@ class PageAudit(HTMLParser):
         if "data-en" in attrs or "data-ar" in attrs:
             self.pairs += 1
             en, ar = attrs.get("data-en"), attrs.get("data-ar")
-            if not en or not ar or en == ar or not re.search(r"[\\u0600-\\u06ff]", ar):
+            if not en or not ar or en == ar or not re.search(r"[\u0600-\u06ff]", ar):
                 self.bad_pairs.append((tag, ident or "", en, ar))
         for key in ("href", "src"):
             value = attrs.get(key, "")
@@ -93,7 +93,7 @@ for relative in PAGES:
         failures.append(f"{relative}: expected exactly one H1")
     if 'data-t="stage"' not in source or "CONCEPT STAGE" not in source:
         failures.append(f"{relative}: concept-stage status is missing")
-    if not re.search(r'product-pages\\.js[\\s\\S]*product-expansion\\.js', source):
+    if not re.search(r'product-pages\.js[\s\S]*product-expansion\.js', source):
         failures.append(f"{relative}: language scripts are missing or in the wrong order")
     if "product-expansion.css" not in source:
         failures.append(f"{relative}: expansion stylesheet is not linked")
@@ -104,6 +104,6 @@ for relative in PAGES:
     print(f"PASS {relative}: {audit.pairs} bilingual elements, {len(audit.refs)} local/external references checked")
 
 if failures:
-    print("\\n".join(f"FAIL {item}" for item in failures))
+    print("\n".join(f"FAIL {item}" for item in failures))
     sys.exit(1)
 print("All MADAAR HEALTH and INTEL page checks passed.")
