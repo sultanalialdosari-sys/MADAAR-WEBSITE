@@ -1,0 +1,28 @@
+name: Validate MADAAR product pages
+
+on:
+  pull_request:
+    branches: ["main"]
+    paths:
+      - "health/**"
+      - "intel/**"
+      - "product-pages.js"
+      - "product-expansion.*"
+      - "scripts/validate_product_pages.py"
+      - ".github/workflows/validate-product-pages.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate-product-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Validate product pages
+        run: python scripts/validate_product_pages.py
