@@ -29,3 +29,5 @@
 }
 
 .product-nav{background:rgba(11,13,18,.94);border-bottom-color:rgba(198,203,210,.16)}.product-nav .brand{color:#E7EAEE}.product-nav .brand-mark{border-color:#C6CBD2;color:#C6CBD2}.product-nav .lang-toggle{color:#C6CBD2}.product-hero,.product-detail,.product-next{border-color:rgba(198,203,210,.16)}.product-detail,.product-next{background-color:#0B0D12}.product-nav a:focus-visible,.product-nav button:focus-visible,.product-link:focus-visible,.button:focus-visible,.back-top:focus-visible{outline:2px solid #C6CBD2;outline-offset:4px}[dir=rtl] .product-page{font-family:'IBM Plex Sans Arabic','Sora',sans-serif}
+
+.brand-lockup{display:inline-flex;align-items:center;gap:9px}.brand-symbol{width:32px;height:25px;object-fit:contain}.brand-wordmark{width:108px;height:auto;max-height:23px;object-fit:contain}.brand-mark,.brand-period{display:none!important}

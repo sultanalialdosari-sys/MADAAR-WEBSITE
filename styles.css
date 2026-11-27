@@ -14,3 +14,6 @@
 body{font-family:var(--font)}[dir=rtl] body,[dir=rtl] button,[dir=rtl] a{font-family:'IBM Plex Sans Arabic','Sora',sans-serif}
 .brand{letter-spacing:.14em}.brand-mark{border-color:#C6CBD2;color:#C6CBD2}.button-primary,.nav-cta{background:#C6CBD2;color:#0B0D12}.product-card,.detail-point{background:#1B2028;border-color:rgba(198,203,210,.16)}.product-nav{background:rgba(11,13,18,.94);position:relative;z-index:5}
 .main-nav a:focus-visible,.nav-actions a:focus-visible,.nav-actions button:focus-visible,.product-nav a:focus-visible,.product-nav button:focus-visible,.button:focus-visible,.product-link:focus-visible,.back-top:focus-visible{outline:2px solid #C6CBD2;outline-offset:4px}
+
+/* Official MADAAR logo lockup — recovered from the original approved asset package */
+.brand-lockup{display:inline-flex;align-items:center;gap:10px;min-width:0}.brand-symbol{width:34px;height:27px;object-fit:contain;display:block}.brand-wordmark{width:116px;height:auto;max-height:24px;object-fit:contain;display:block}.footer-brand .brand-symbol{width:29px;height:23px}.footer-brand .brand-wordmark{width:105px;max-height:21px}.brand-mark{display:none!important}.brand-period{display:none!important}
