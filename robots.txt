@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sultanalialdosari-sys.github.io/MADAAR-WEBSITE/sitemap.xml
