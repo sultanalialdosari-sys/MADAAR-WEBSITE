@@ -1,0 +1,1 @@
+(function(){function applyExpansionLanguage(){const lang=document.documentElement.lang==="ar"?"ar":"en";document.querySelectorAll("[data-en][data-ar]").forEach(el=>{el.textContent=el.dataset[lang]||el.dataset.en||"";});}const toggle=document.getElementById("productLanguage");if(toggle)toggle.addEventListener("click",applyExpansionLanguage);applyExpansionLanguage();})();
