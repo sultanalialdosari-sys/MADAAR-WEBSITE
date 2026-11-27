@@ -1,0 +1,41 @@
+/* MADAAR HEALTH & INTEL product expansion */
+.product-expansion{padding:88px 7.2%;border-bottom:1px solid rgba(198,203,210,.16)}
+.expansion-heading{max-width:760px;margin-bottom:38px}
+.expansion-kicker{display:flex;align-items:center;gap:12px;color:#9aa8bd;font-size:9px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:22px}
+.expansion-kicker:before{content:"";width:26px;height:1px;background:#91a3bd}
+.expansion-heading h2,.expansion-callout h2{font-size:clamp(32px,4.5vw,58px);line-height:1.16;letter-spacing:-.045em;margin:0 0 16px}
+.expansion-heading>p,.expansion-callout>p{max-width:680px;color:#a3adbc;font-size:14px;line-height:1.9;margin:0}
+.expansion-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.expansion-card{min-height:190px;padding:24px;border:1px solid rgba(198,203,210,.15);background:linear-gradient(145deg,#141922,#0e1219)}
+.expansion-card .card-index{display:block;color:#91a3bd;font-size:10px;letter-spacing:.16em;margin-bottom:28px}
+.expansion-card h3{font-size:16px;margin:0 0 10px;color:#e7eaee}
+.expansion-card p{font-size:12px;line-height:1.85;color:#9da8b8;margin:0}
+.expansion-steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;border-top:1px solid rgba(198,203,210,.2);border-bottom:1px solid rgba(198,203,210,.2)}
+.expansion-step{padding:24px 18px 24px 0;position:relative}
+.expansion-step+.expansion-step{padding-left:18px;border-left:1px solid rgba(198,203,210,.12)}
+.expansion-step span{color:#91a3bd;font-size:10px;letter-spacing:.15em}
+.expansion-step h3{font-size:14px;margin:18px 0 8px}
+.expansion-step p{font-size:11px;line-height:1.8;color:#9da8b8;margin:0}
+.expansion-audience{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.expansion-audience article{padding:20px 18px;background:#111720;border:1px solid rgba(198,203,210,.13)}
+.expansion-audience h3{font-size:13px;margin:0 0 8px}
+.expansion-audience p{font-size:11px;line-height:1.8;color:#9da8b8;margin:0}
+.expansion-guardrails{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.expansion-guardrail{padding:26px;border:1px solid rgba(198,203,210,.15);background:#111720}
+.expansion-guardrail h3{font-size:15px;margin:0 0 14px}
+.expansion-guardrail ul{margin:0;padding-inline-start:18px;color:#a3adbc;font-size:12px;line-height:2}
+.expansion-roadmap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.expansion-roadmap div{padding:18px;border-top:2px solid #697d98;background:#111720}
+.expansion-roadmap span{color:#91a3bd;font-size:9px;letter-spacing:.13em}
+.expansion-roadmap h3{font-size:13px;margin:12px 0 7px}
+.expansion-roadmap p{font-size:11px;line-height:1.75;color:#9da8b8;margin:0}
+.expansion-note{margin-top:24px;padding:16px 18px;border-inline-start:2px solid #91a3bd;background:rgba(145,163,189,.07);color:#aeb8c7;font-size:11px;line-height:1.85}
+.expansion-callout{padding:72px 7.2%;display:flex;justify-content:space-between;align-items:center;gap:32px;background:#121923;border-bottom:1px solid rgba(198,203,210,.16)}
+.expansion-callout>div{max-width:680px}
+.expansion-callout .button{flex-shrink:0}
+[dir=rtl] .product-expansion{text-align:right}
+[dir=rtl] .expansion-step+.expansion-step{padding-left:0;padding-right:18px;border-left:0;border-right:1px solid rgba(198,203,210,.12)}
+[dir=rtl] .expansion-step{padding-right:0;padding-left:18px}
+@media(max-width:900px){.expansion-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.expansion-steps{grid-template-columns:repeat(3,minmax(0,1fr))}.expansion-step:nth-child(4){border-left:0;padding-left:0}.expansion-audience{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.product-expansion{padding:66px 6%}.expansion-grid,.expansion-guardrails{grid-template-columns:1fr}.expansion-steps{grid-template-columns:1fr}.expansion-step,.expansion-step+.expansion-step{padding:18px 0;border-left:0;border-right:0;border-bottom:1px solid rgba(198,203,210,.12)}.expansion-step:last-child{border-bottom:0}.expansion-audience{grid-template-columns:1fr 1fr}.expansion-roadmap{grid-template-columns:1fr 1fr}.expansion-callout{padding:60px 6%;display:block}.expansion-callout .button{margin-top:20px}}
+@media(max-width:380px){.expansion-audience,.expansion-roadmap{grid-template-columns:1fr}}
